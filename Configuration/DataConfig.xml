@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Enviromant>
+    <!-- Timeout -->
+    <Timeout>10</Timeout>
+
+    <!-- General -->
+    <PlatformName>web</PlatformName> <!-- Can be: web / mobile / api / electron / desktop-->
+
+    <!-- Web -->
+    <BrowserName>firefox</BrowserName> <!-- Can be: chrome / firefox / ie -->
+
+    <swagTest>
+        <Url>https://www.saucedemo.com/v1/</Url>
+        <password>secret_sauce</password>
+    </swagTest>
+    <googleTest>
+        <Url>https://www.google.com</Url>
+    </googleTest>
+</Enviromant>
