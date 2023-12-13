@@ -40,15 +40,16 @@ def get_data(tag_name):
 
 
 def get_csv(file_name, tag_mame):
-    with open("DDTFile/" + file_name + ".csv", 'r') as file:
+    with open("DDTFiles/" + file_name + ".csv", 'r') as file:
         reader = csv.DictReader(file)
         return [row[tag_mame] for row in reader]
 
 
-def get_json(file_name):
-    with open("DDTFile/" + file_name + ".csv", 'r') as file:
+def get_json(file_name, tag_name):
+    with open("DDTFiles/" + file_name + ".json", 'r') as file:
         data = json.load(file)
-        return data.get('usernames', [])
+        usernames = data[tag_name]
+        return {tag_name: usernames}
 
 
 @pytest.fixture()
