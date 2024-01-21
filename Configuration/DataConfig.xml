@@ -4,7 +4,7 @@
     <Timeout>10</Timeout>
 
     <!-- General -->
-    <PlatformName>web</PlatformName> <!-- Can be: web / mobile / api / electron / desktop-->
+    <Platform>web</Platform> <!-- Can be: web / mobile / api / electron / desktop-->
 
     <!-- Web -->
     <BrowserName>firefox</BrowserName> <!-- Can be: chrome / firefox / ie -->
